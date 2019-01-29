@@ -113,7 +113,7 @@ h5{
 .read{
     color: #dd000a;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
