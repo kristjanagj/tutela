@@ -2,15 +2,44 @@ $('.carousel').carousel({
     interval: 1500
 })
 
-// var owl = $('.owl-carousel');
-// owl.owlCarousel();
-// // Go to the next item
-// $('.customNextBtn').click(function() {
-//     owl.trigger('next.owl.carousel');
+$('.loop').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
+
+// $('.owl-carousel').owlCarousel({
+//     margin:10,
+//     loop:true,
+//     autoWidth:true,
+//     items:4
 // })
-// // Go to the previous item
-// $('.customPrevBtn').click(function() {
-//     // With optional speed parameter
-//     // Parameters has to be in square bracket '[]'
-//     owl.trigger('prev.owl.carousel', [300]);
+
+
+// $(document).ready(function(){
+//     $('.owl-carousel').owlCarousel();
+// });
+
+
+// $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:5
+//         }
+//     }
 // })
