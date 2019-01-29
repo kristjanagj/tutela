@@ -2,17 +2,17 @@ $('.carousel').carousel({
     interval: 1500
 })
 
-$('.loop').owlCarousel({
-    center: true,
-    items:2,
-    loop:true,
-    margin:10,
-    responsive:{
-        600:{
-            items:4
-        }
-    }
-});
+// $('.loop').owlCarousel({
+//     center: true,
+//     items:2,
+//     loop:true,
+//     margin:10,
+//     responsive:{
+//         1600:{
+//             items:4
+//         }
+//     }
+// });
 
 // $('.owl-carousel').owlCarousel({
 //     margin:10,
