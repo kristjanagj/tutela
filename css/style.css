@@ -9,7 +9,6 @@
 #header .navbar{
     position: absolute;
     z-index: 2;
-    width: 100%;
 }
 .carousel-indicators li {
     position: relative;
@@ -32,6 +31,8 @@
     font-weight: bold;
     text-decoration: none;
     font-family: 'Lora', serif;
+}
+.navbar-expand-lg .navbar-nav {
     border-bottom: 2px solid white;
 }
 .navbar-light .navbar-toggler {
@@ -40,7 +41,6 @@
 .navbar-toggler-icon {
     width: 35px;
     height: 35px;
-    background-color: #e9dcdc;
 }
 .fa-align-justify{
     display: none;
@@ -56,12 +56,12 @@
 .title h1{
     font-size: 100px;
     font-weight: bold;
-    top: 303px;
+    top: 40%;
     font-family: 'Lora', serif;
 }
 .title h4{
     font-size: 44px;
-    top: 420px;
+    top: 55%;
     text-align: center;
     font-family: 'Lora', sans-serif;
 }
@@ -106,9 +106,12 @@ h5{
     padding-top: 16px;
     font-family: 'Lora', serif;
 }
-.text-information p{
+.two p{
+    padding: 45px 0px 15px 0px;
+}
+.text-information p, .drinks p{
     font-size: 16px;
-    font-family: 'Lora', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .read{
     color: #dd000a;
@@ -141,74 +144,54 @@ h2 span {
 }
 .drinks p{
     padding: 12px 0px 25px 0px;
-    font-size: 16px;
-    font-family: 'Lora', sans-serif;
 }
 hr{
     margin: 0px;
     border: 2px solid #c6c6c6;
 }
-#information .second-carousel{
-    padding: 48px 80px 115px 80px;
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 40px 0px;
 }
-#information .carousel-indicators {
-	left: 0;
-	top: auto;
-    bottom: -85px;
+.wrapper .item{
+    padding: 10px;
 }
-#information .carousel-indicators li {
-    background: transparent;
-    border-radius: 50%;
+.wrapper .owl-theme .owl-dots .owl-dot span {
     width: 18px;
     height: 18px;
+    margin: 5px 7px;
+    background: white;
+    display: block;
+    border-radius: 30px;
     border: 2px solid #dd000a;
 }
-#information .carousel-indicators .active {
+.wrapper .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
     background-color: #dd000a;
 }
-#information .right.carousel-control {
-    background-image: url("images/right.jpg");
-    top: 30px;
-    position: absolute;  
+.wrapper .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    font: inherit;
+    color: #dd000a;
+    font-size: 50px;
 }
-#information .left.carousel-control {
-    background-image: url("images/left.jpg");
-    top: 30px;
-    position: absolute;   
+.wrapper .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: transparent;
 }
-#information .carousel-controls {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: absolute;
-    width: 98%;
-    top: 32%;
-    margin-left: -72px;
+.wrapper .owl-nav .owl-prev span {
+    position: absolute; 
+    top: -10%;
+    left: -60px;
+    font-size: 150px;
 }
-/* .carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: -75px;
-    bottom: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: red;
-    text-align: center;
-    width: 1%;
+.wrapper .owl-nav .owl-next span{
+    position: absolute; 
+    top: -10%;
+    right: -60px;
+    font-size: 150px;
 }
-.carousel-control-next, .carousel-control-prev:hover{
-    color: red;
+.wrapper .owl-nav .owl-prev span:hover, .wrapper .owl-nav .owl-next span:hover {
+    color: #dd000a;
 }
-.carousel-control-prev .fa, .carousel-control-next .fa{
-    font-size: 171px;
-}
-.carousel-control-prev .fa:hover{
-    color: red;
-} */
 .footer{
     background-color: black;
 }
@@ -217,7 +200,6 @@ hr{
 }
 .contact ul a{
     color: white;
-
     text-decoration: none;
 }
 .contact ul {
@@ -272,10 +254,15 @@ section h3{
 }
 section p, .product li{
     font-size: 16px;
-    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 section p {
-padding: 5px 20px;
+    padding: 5px 20px;
+}
+address p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0px;
 }
 section h5{
     padding: 30px 0px 5px 20px;
@@ -287,7 +274,7 @@ section h5{
     position: absolute;
     width: 100%;
     color: white;
-    top: 230px;
+    top: 50%;
 }
 .right-section {
     background-color: #e3e3e3;
@@ -296,9 +283,6 @@ section h5{
 .left-section{
     padding-right: 74px;
 }
-/* .nav-item.active{
-    border-top: 2px solid white;
-} */
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: white;
     border-top: 2px solid white;
@@ -310,11 +294,14 @@ section h5{
 }
 
 /* Le Aziende */
+.cantina-information {
+    padding: 50px 0px 80px 0px;
+}
 .new-information{
     padding-top: 30px;
 }
 .cantina-name {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .cantina-name h6{
     color: #df111a;
@@ -328,37 +315,35 @@ address{
 }
 .email a, .website a{
     color: #df111a;
-    /* font-size: 16px;
-    font-family: 'Lora', serif; */
 }
 .website a{
     font-weight: bold;
-    /* font-family: 'Lora', serif; */
 }
-
-
-
-
 @media (max-width: 1199px) { 
     .navbar-brand {
-        padding-left: 10px;
+        display: none;
     }
     .navbar-light .navbar-nav .nav-link {
-        padding: 52px 5px 12px 5px;
+        padding: 52px 20px 12px 20px;
+        border-bottom: none;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
     }
     .text-information {
         padding: 55px 12px 4px 12px;
     }
     .title h1{
         font-size: 40px;
-        top: 190px;
     }
     .title h4 {
         font-size: 26px;
-        top: 245px;
     }
     h2 {
         font-size: 45px;
+    }
+    .two p {
+        padding: 5px;
     }
     #footer{
         padding: 10px;
@@ -369,15 +354,26 @@ address{
     }
     .photo-caption h1 {
         font-size: 50px;
-        top: 165px;
     }
     .cantina-name {
         padding-top: 0px;
     }  
+    .wrapper .owl-nav .owl-next span {
+        top: 10%;
+        right: -17px;
+        font-size: 80px;
+    }
+    .wrapper .owl-nav .owl-prev span {
+        top: 10%;
+        left: -14px;
+        font-size: 80px;
+    }
 }
 @media (max-width: 991px) {
     .navbar-brand {
-        width: 60%;;
+        display: inline-block;
+        width: 55%;
+        padding: 5px;
     }
     .navbar-light .navbar-nav .nav-link {
         padding: 2px;
@@ -385,16 +381,30 @@ address{
     .navbar-light .navbar-nav .nav-link {
         border-bottom: 2px solid white;
         float: right;
+        padding: 5px;
+    }
+    #header .navbar {
+        background-color: #343a40;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        border: none;
+        float: left;
+    }
+    .navbar-expand-lg .navbar-nav {
+        border: none;
+        padding: 25px;
     }
     .nav-item.active{
         margin-top: -50px;
     }
     .photo-caption h1 {
-        font-size: 30px;
-        top: 105px;
+        font-size: 45px;
     }
     .left-section {
         padding: 0px 33px;
+    }
+    .wrapper .owl-nav .owl-prev span, .wrapper .owl-nav .owl-next span {
+        top: 20%;
     }
 }
 @media (max-width: 767px) { 
@@ -405,10 +415,8 @@ address{
         display: flex;
         flex-wrap: nowrap;
     }
-    #information .carousel-controls {
-        width: 95%;
-        top: 27%;
-        margin-left: -60px;
+    .photo-caption h1 {
+        font-size: 40px;
     }
     .last-contact {
         margin-top: 0px;
@@ -423,6 +431,9 @@ address{
     .right-section {
         margin-bottom: 0px;
     } 
+    .wrapper .owl-nav .owl-prev span, .wrapper .owl-nav .owl-next span {
+        top: 14%;
+    }
 }
 @media (max-width: 575px) { 
     .navbar-light .navbar-nav .nav-link {
@@ -441,13 +452,17 @@ address{
     h2{
         font-size: 28px;
     }
-    #information .carousel-controls {
-        width: 87%;
-        top: 24%;
-        margin-left: -42px;
-    }
     .cantina-name {
         padding-top: 20px;
+    }
+    .wrapper .owl-nav .owl-prev span, .wrapper .owl-nav .owl-next span {
+        top: 23%;
+    }
+    .wrapper .owl-nav .owl-prev span {
+        left: -17px;
+    }
+    .photo-caption h1 {
+        display: none;
     }
 }
 
