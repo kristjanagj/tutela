@@ -319,6 +319,21 @@ address{
 .website a{
     font-weight: bold;
 }
+@media (max-width: 1399px) { 
+    .navbar-light .navbar-nav .nav-link {
+        padding: 52px 10px 12px 10px;
+    }
+    .wrapper .owl-nav .owl-prev span {
+        top: 7%;
+        left: -18px;
+        font-size: 100px;
+    }
+    .wrapper .owl-nav .owl-next span {
+        top: 7%;
+        right: -18px;
+        font-size: 100px;
+    }
+}
 @media (max-width: 1199px) { 
     .navbar-brand {
         display: none;
